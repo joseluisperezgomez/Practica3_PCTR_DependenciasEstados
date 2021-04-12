@@ -115,9 +115,7 @@ public class Parque implements IParque {
 			while (contadoresPersonasPuerta.get(p) == MAX) {
 				wait();
 			}
-		}
-		
-		
+		}	
 	}
 
 	protected void comprobarAntesDeSalir() throws InterruptedException {
