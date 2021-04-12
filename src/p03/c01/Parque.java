@@ -9,7 +9,6 @@ public class Parque implements IParque {
 	private final static int MIN = 0;
 
 	private int contadorPersonasTotales;
-	private int contadorTotalMovimientos;
 	private int contadorTotalEntrada;
 	private int contadorTotalSalida;
 	private Hashtable<String, Integer> contadoresPersonasPuerta;
