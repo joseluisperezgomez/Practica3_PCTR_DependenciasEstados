@@ -17,7 +17,6 @@ public class Parque implements IParque {
 	public Parque() {
 
 		contadorPersonasTotales = 0;
-		contadorTotalMovimientos = 0;
 		contadorTotalEntrada = 0;
 		contadorTotalSalida = 0;
 		contadoresPersonasPuerta = new Hashtable<String, Integer>();
@@ -35,7 +34,6 @@ public class Parque implements IParque {
 		comprobarAntesDeEntrar();
 
 		// Aumentamos el contador total y el individual
-		contadorTotalMovimientos++;
 		contadorPersonasTotales++;
 		contadorTotalEntrada++;
 		contadoresPersonasPuerta.put(puerta, contadoresPersonasPuerta.get(puerta) + 1);
@@ -59,7 +57,6 @@ public class Parque implements IParque {
 		comprobarAntesDeSalir();
 
 		// Aumentamos el contador total y el individual
-		contadorTotalMovimientos++;
 		contadorPersonasTotales--;
 		contadorTotalSalida++;
 		contadoresPersonasPuerta.put(puerta, contadoresPersonasPuerta.get(puerta) - 1);
