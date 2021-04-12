@@ -76,10 +76,6 @@ public class Parque implements IParque {
 		
 		System.out.println(movimiento + " por puerta " + puerta);
 		System.out.println("--> Personas en el parque " + contadorPersonasTotales); // + " tiempo medio de estancia: " +
-																					// tmedio);
-		System.out.println("--> contadorTotalEntrada " + contadorTotalEntrada);
-		System.out.println("--> contadorTotalSalida " + contadorTotalSalida);
-		System.out.println("--> contadorTotalMovimientos " + contadorTotalMovimientos);
 
 		// Iteramos por todas las puertas e imprimimos sus entradas
 		for (String p : contadoresPersonasPuerta.keySet()) {
